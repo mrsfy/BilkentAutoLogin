@@ -1,0 +1,55 @@
+﻿<mw:MetroWindow 
+    xmlns:tb="http://www.hardcodet.net/taskbar"
+    x:Class="BilnetAutoLogin.MainWindow" Title="BILNET AUTO LOGIN"
+    Height="305"
+    Width="250"
+    ResizeMode="CanMinimize"
+    Closing="MetroWindow_Closing"
+    StateChanged="MetroWindow_StateChanged"
+    WindowStartupLocation="CenterScreen"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mw="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="12*" />
+            <ColumnDefinition Width="97*" />
+            <ColumnDefinition Width="13*" />
+        </Grid.ColumnDefinitions>
+        <TextBox Name="usernameText" mw:TextBoxHelper.Watermark="Bilkent ID" Margin="1,100,25,135" Grid.ColumnSpan="2" Grid.Column="1" TextChanged="Username_Changed" />
+        <PasswordBox Name="passwordText" mw:TextBoxHelper.Watermark="*********"  Margin="1,160,25,75" Grid.ColumnSpan="2" Grid.Column="1" PasswordChanged="Password_Changed" />
+        <Image Name="bilkent_logo" Margin="101,4,0,179" Source="bilkentlogo.ico" Stretch="Fill" Grid.Column="1" />
+        <Label Name="label" HorizontalAlignment="Left" Margin="2,1,0,0" VerticalAlignment="Top" Height="99" Width="99" FontSize="32" Grid.Column="1">
+            <TextBlock TextBlock.FontSize="21.333" Width="92" Height="95">bilnet<LineBreak />auto<LineBreak />login</TextBlock>
+        </Label>
+        <Label Name="resultLabel" Content="Enter your credentials..." HorizontalAlignment="Left" Height="28" Margin="0,211,0,0" VerticalAlignment="Top" Width="190" FontFamily="Segoe UI" Grid.Column="1" />
+        <CheckBox Name="startupCheckBox" Content="Start on startup" HorizontalAlignment="Right" Margin="0,241,88,0" VerticalAlignment="Top" Height="24" Grid.Column="1" Unchecked="startupCheckBox_Unchecked" Checked="startupCheckBox_Checked" />
+        <Button Name="manualButton" Content="MANUAL" HorizontalAlignment="Left" Margin="119,239,0,0" VerticalAlignment="Top" Width="76" Height="23" Grid.Column="1" Grid.ColumnSpan="2" Click="manual_button_Click" />
+        
+        <tb:TaskbarIcon
+            TrayLeftMouseUp="TaskbarIcon_TrayLeftMouseUp"
+  IconSource="/bilkentlogo.ico"
+  ToolTipText="Bilkent Auto Login">
+            <tb:TaskbarIcon.TrayToolTip>
+                <Border
+                  Background="White"
+                  BorderThickness="1"
+                  CornerRadius="1"
+                  Opacity="0.8">
+                    
+                   <TextBlock
+                    Text="Bilkent Auto Login"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center" />
+                </Border>
+            </tb:TaskbarIcon.TrayToolTip>
+            
+            <tb:TaskbarIcon.ContextMenu>
+                <ContextMenu
+                Background="White"
+                BorderThickness="1" >
+                    <MenuItem Header="Request Login" />
+                </ContextMenu>
+            </tb:TaskbarIcon.ContextMenu>
+
+        </tb:TaskbarIcon>
+    </Grid>
+</mw:MetroWindow>
