@@ -110,6 +110,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="binary\Bilnet Auto Login.zip" />
+    <None Include="binary\contents\BilnetAutoLogin.exe.config" />
+    <None Include="binary\contents\BilnetAutoLogin.vshost.exe.config" />
+    <None Include="binary\contents\BilnetAutoLogin.vshost.exe.manifest" />
     <None Include="packages.config" />
     <None Include="packages1.config" />
     <None Include="Properties\Settings.settings">
@@ -127,6 +131,20 @@
   <ItemGroup>
     <Resource Include="assets\problem.png" />
     <Resource Include="assets\solution.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="binary\contents\BilnetAutoLogin.exe" />
+    <Content Include="binary\contents\BilnetAutoLogin.pdb" />
+    <Content Include="binary\contents\BilnetAutoLogin.vshost.exe" />
+    <Content Include="binary\contents\Hardcodet.Wpf.TaskbarNotification.dll" />
+    <Content Include="binary\contents\Hardcodet.Wpf.TaskbarNotification.pdb" />
+    <Resource Include="binary\contents\Hardcodet.Wpf.TaskbarNotification.xml" />
+    <Content Include="binary\contents\MahApps.Metro.dll" />
+    <Content Include="binary\contents\MahApps.Metro.pdb" />
+    <Resource Include="binary\contents\MahApps.Metro.xml" />
+    <Content Include="binary\contents\RestSharp.dll" />
+    <Resource Include="binary\contents\RestSharp.xml" />
+    <Content Include="binary\contents\System.Windows.Interactivity.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
