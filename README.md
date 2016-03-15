@@ -25,12 +25,12 @@ Open a pull request following [Aaron's git workflow](https://github.com/asmeurer
 
 
 ### Contributors
-* [Selim Fýrat Yýlmaz](https://github.com/mrsfy)<br />
+* [Selim FÄ±rat YÄ±lmaz](https://github.com/mrsfy)<br />
 Feel free to be here -_-
 
 ## License
 This repository released under MIT License.
 
-Copyright (c) 2016 Selim Fýrat Yýlmaz
+Copyright (c) 2016 Selim FÄ±rat YÄ±lmaz
 
 http://opensource.org/licenses/MIT
